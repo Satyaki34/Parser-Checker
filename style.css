@@ -14,7 +14,7 @@
 
   header {
     background-color: #333;
-    color: #fff;
+    color: #fff;    
     padding: 15px;
     text-align: center;
     position: sticky;
@@ -43,6 +43,11 @@ svg{
     align-items: flex-start;
   }
  
+  #p-rule{
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
   label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -50,6 +55,7 @@ svg{
   
   input[type="text"],select {
     padding: 5px;
+    margin-left: 20px;
     margin-bottom: 20px;
     border: 1px solid #404040a8;
     border-radius: 6px
@@ -64,8 +70,11 @@ svg{
     border-radius: 12px;
     font-weight: 600;
   }
+
   #non-flex button{
-    padding: 4px 10px;
+    padding: 6px 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     border-radius: 6px;
     border: 1px solid #404040a8;
     cursor: pointer;
@@ -89,7 +98,44 @@ svg{
       padding: 10px;
     }
   }
-  /* label[for="production-rule"]{
+  label[for="production-rule"]{
     display: flex;
-    flex-direction: column;
-  } */
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 480px) {
+    svg{
+      width: 34px;
+      height: 34px;
+      margin-right: 5px;
+   }
+    h1{
+      width: 150px;
+      font-size: 1.5em;
+    }
+    main{
+      width: 80%;
+      margin-top: 40%;
+      margin-left: 7%;
+    }
+
+    #non-flex-input{
+      display: flex;
+      flex-direction: column;
+    }
+
+    label[for="production-rule"]{
+    display: flex;
+    flex-direction: row;
+  }
+  label[for="parser-select"]{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #parser-select{
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+    
+  }
