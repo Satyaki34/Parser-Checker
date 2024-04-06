@@ -1,95 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-  body {
-    background-color: #f2f2f2;
-  }
-  
-
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-svg{
-    filter: brightness(5) invert(1);
+body {
+  background-color: #f2f2f2;
 }
-  main {
-    max-width: 445px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 15px 12px 18px 0px #4c4b4bcf;;
-  }
-  
-  form {
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  filter: brightness(5) invert(1);
+}
+main {
+  max-width: 445px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 15px 12px 18px 0px #4c4b4bcf;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #404040a8;
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 33px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 600;
+}
+#non-flex button {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #404040a8;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #ff6f61;
+}
+#non-flex > button:hover {
+  background-color: #e24a3c;
+}
+
+input[type="submit"]:hover {
+  background-color: #e24a3c;
+}
+.submit {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 455px) {
+  #non-flex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
   }
- 
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],select {
-    padding: 5px;
-    margin-bottom: 20px;
-    border: 1px solid #404040a8;
-    border-radius: 6px
-  }
-  
-  input[type="submit"] {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 12px 33px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-weight: 600;
-  }
-  #non-flex button{
+  #non-flex button {
     padding: 4px 10px;
     border-radius: 6px;
     border: 1px solid #404040a8;
     cursor: pointer;
     font-size: 15px;
     font-weight: 600;
-    background-color:#ff6f61; 
+    background-color: #ff6f61;
+    margin-right: 300px;
+    margin-bottom: 5px;
   }
-  #non-flex>button:hover{
-    background-color: #e24a3c;
+  input[type="text"],
+  select {
+    padding: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #404040a8;
+    border-radius: 6px;
   }
-  
-  input[type="submit"]:hover {
-    background-color: #e24a3c;
-  }
-  .submit{
-    margin: 0 auto;
-  }
-
-  @media screen and (max-width: 768px) {
-    main {
-      padding: 10px;
-    }
-  }
-  /* label[for="production-rule"]{
+}
+@media screen and (max-width: 455px) {
+  #non-flex {
     display: flex;
     flex-direction: column;
+  }
+  #non-flex button {
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #404040a8;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #ff6f61;
+    margin-right: 300px;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  select {
+    padding: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #404040a8;
+    border-radius: 6px;
+  }
+  /* .re-adjust {
+    display: contents;
   } */
+}
