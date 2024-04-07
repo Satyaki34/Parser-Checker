@@ -23,8 +23,9 @@ header {
   align-items: center;
 }
 
-svg {
-  filter: brightness(5) invert(1);
+
+img{
+  filter:invert(1);
 }
 main {
   max-width: 445px;
